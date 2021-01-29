@@ -1,8 +1,23 @@
-*{
-    box-shadow: 0 0 0 0px red;
-    font-family: 'Noto Sans KR', sans-serif;
+* {
+  -webkit-box-shadow: 0 0 0 0px red;
+          box-shadow: 0 0 0 0px red;
+  
+  font-family: 'Noto Sans KR', sans-serif;
 }
-
 html, body{
-    height: 100%;
+  font-size:16px;
 }
+.p-160{
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.main-logo{
+  max-width: 30%;
+}
+.navbar{
+  z-index: 99;
+}
+.section01{
+  z-index: 1;
+}
+/*# sourceMappingURL=style.css.map */

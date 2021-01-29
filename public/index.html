@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-<html style="height:100%" lang="ko">
+<html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
   <!--CDN Bootstrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
 
   <!--CDN Google Font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">  
-  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+  <!--favicon-->
+  <link rel=" shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <title>PORTFOLIO</title>
 </head>
+
 <body class="navbar-show">
   <!--navigation bar-->
-  <header class="navbar navbar-top navbar-dark bg-dark">
+  <header class="navbar navbar-expand-md navbar-top navbar-dark bg-dark position-relative top-0">
     <div class="container">
       <a class="navbar-brand" href="#">Irostub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupport"
+        aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="justify-content-end collapse navbar-collapse" id="navbarSupport">
+        <div class="">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROJECT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
 
+  <div class="position-absolute top-0 p-160 bg-dark section01">
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <div class="main-logo">
+          <img src="./image/logo.png" class="img-fluid" alt="logo">
+        </div>
+      </div>
+    </div>
+  </div>
   <!--CDN Bootstrap Script-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
   <script src="./app.js"></script>
 </body>
+
 </html>
