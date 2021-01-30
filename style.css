@@ -1,0 +1,25 @@
+* {
+  -webkit-box-shadow: 0 0 0 0px red;
+          box-shadow: 0 0 0 0px red;
+  
+  font-family: 'Noto Sans KR', sans-serif;
+}
+html, body{
+  font-size:16px;
+}
+.main-logo{
+  max-width: 25%;
+}
+.navbar{
+  z-index: 99;
+}
+.section01{
+  z-index: 2;
+}
+.text-white{
+  color:white;
+}
+.bss{
+  box-shadow: 0 0 0 3px red !important;
+}
+/*# sourceMappingURL=style.css.map */
