@@ -1,3 +1,7 @@
+:root{
+  --scroll-value : 0%;
+}
+
 * {
   -webkit-box-shadow: 0 0 0 0px red;
           box-shadow: 0 0 0 0px red;
@@ -31,7 +35,7 @@ html, body{
   height:2px;
   background-color:#fff;
   float:left;
-  width: 70%;
   /*progress bar status*/
+  width: var(--scroll-value);
 }
 /*# sourceMappingURL=style.css.map */
