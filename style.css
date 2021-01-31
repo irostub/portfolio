@@ -7,19 +7,31 @@
 html, body{
   font-size:16px;
 }
-.main-logo{
-  max-width: 25%;
+.logo{
+  max-width: 30%;
 }
-.navbar{
-  z-index: 99;
-}
-.section01{
-  z-index: 2;
-}
-.text-white{
-  color:white;
+.section-line{
+  max-width:90%;
 }
 .bss{
   box-shadow: 0 0 0 3px red !important;
+}
+.bg-black{
+  background-color:#080808;
+}
+.bg-grayBlack{
+  background-color:#0F0F0F;
+}
+.bar{
+  height:2px;
+  background-color:#080808;
+  overflow:hidden;
+}
+.bar span{
+  height:2px;
+  background-color:#fff;
+  float:left;
+  width: 70%;
+  /*progress bar status*/
 }
 /*# sourceMappingURL=style.css.map */
