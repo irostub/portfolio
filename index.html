@@ -18,24 +18,69 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="node_modules/fullpage.js/dist/fullpage.css">
+  <link rel="stylesheet" href="css/index.css">
 
-  <meta name="theme-color" content="#fafafa">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!-- Add your site or application content here -->
+<header>
+  <a href="#">IROSTUB</a>
+  <div class="nav">
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </div>
+</header>
+<div id="fullpage">
+  <div class="section active" id="section0">
+    <div class="title">
+      <div class="b-title">
+        IROSTUB
+      </div>
+      <div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+      <div>
+        backend developer /<br>
+        backend engineer
+      </div>
+    </div>
+  </div>
+  <div class="section" id="section1">
+    <div class="slide"><h1>SECTION1-0</h1></div>
+    <div class="slide active"><h1>SECTION1-1</h1></div>
+    <div class="slide"><h1>SECTION1-2</h1></div>
+    <div class="slide"><h1>SECTION1-3</h1></div>
+  </div>
+  <div class="section" id="section2"><h1>SECTION-2</h1></div>
+  <div class="section" id="section3"><h1>SECTION-3</h1></div>
+</div>
+
+<script src="node_modules/fullpage.js/dist/fullpage.js"></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
