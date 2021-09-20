@@ -4,4 +4,4 @@ var e;!function(t,n,o,r,i){"function"==typeof e&&e.amd?e(function(){return t.ful
 },{}],"QvaY":[function(require,module,exports) {
 "use strict";var e=a(require("fullpage.js"));function a(e){return e&&e.__esModule?e:{default:e}}var i=new e.default("#fullpage",{licenseKey:"75CCC562-E65645AD-AD246452-83704190",anchors:["firstPage","secondPage","thirdPage"],navigation:!0,navigationPosition:"left",sectionsColor:["#f2f2f2","#4BBFC3","#7BAABE","whitesmoke","#ccddff"]});
 },{"fullpage.js":"NJdl"}]},{},["QvaY"], null)
-//# sourceMappingURL=portfolio/js.26b0d6da.js.map
+//# sourceMappingURL=js.26b0d6da.js.map
