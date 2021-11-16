@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" charset="UTF-8">
+  <meta name="author" content="irostub"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Introduction for irostub"/>
+  <title>Irostub</title>
+  <link rel="stylesheet" type="text/css" href="/node_modules/fullpage.js/dist/fullpage.css"/>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@1,500&display=swap" rel="stylesheet">
+  <style>
+      * {
+          font-family: 'Open Sans', sans-serif;
+      }
+
+      #particles-js {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 60;
+      }
+
+      html::-webkit-scrollbar {
+          display: none;
+      }
+
+      .menu-wrapper {
+          position: fixed;
+          width: 100%;
+          height: 40px;
+          z-index: 70;
+          left: 3%;
+          top: 3%;
+      }
+
+      #menu {
+          padding: 0;
+          list-style: none;
+          float: left;
+      }
+
+      #menu li {
+          float: left;
+      }
+
+      #menu a {
+          display: block;
+          padding: 10px;
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.2em;
+          font-weight: bold;
+          text-transform: uppercase;
+          text-align: center;
+          border-radius: 5px;
+          transition: all 0.3s ease-in-out;
+      }
+
+      #menu .active a {
+          color: #555555;
+      }
+
+      #first {
+          position: relative;
+          left: 20%;
+          display: inline-block;
+          z-index: 100;
+      }
+
+      #first * {
+          display: block;
+      }
+  </style>
+
+</head>
+<body>
+<div class="menu-wrapper">
+  <ul id="menu">
+    <li data-aos="fade-down"
+        data-aos-delay="500"
+        data-aos-duration="500"
+        data-menuanchor="firstPage" class="active"><a href="#firstPage">MAIN</a></li>
+    <li data-aos="fade-down"
+        data-aos-delay="700"
+        data-aos-duration="500"
+        data-menuanchor="secondPage"><a href="#secondPage">PROFILE</a></li>
+    <li data-aos="fade-down"
+        data-aos-delay="900"
+        data-aos-duration="500"
+        data-menuanchor="3rdPage"><a href="#3rdPage">PROJECT</a></li>
+  </ul>
+</div>
+<a href="https://github.com/irostub">
+  <img data-aos="fade-down-right"
+       data-aos-delay="900"
+       data-aos-duration="500"
+       style="position:absolute; right:0; top:0; z-index: 100" loading="lazy" width="149" height="149"
+       src="/images/forkme_dark_background.png"></a>
+<div id="fullpage">
+  <div class="section active" id="section0">
+    <div data-aos="fade-right"
+         data-aos-delay="50"
+         data-aos-duration="2000"
+         id="first" class="position-relative text-white">
+      <h1 class="display-1">Irostub</h1>
+      <h3 class="display-4">Backend Engineer</h3>
+        <p class="text-muted">Keep it small and simple. Add value to code.</p>
+    </div>
+    <div id="particles-js"></div>
+  </div>
+
+  <!--자기 소개 프로필-->
+  <div class="section" id="section1">
+    <div data-aos="fade-up">
+      <p class="text-white">hello world</p>
+<!-- 1    2
+     1    3
+     형태로 구성-->
+    </div>
+  </div>
+
+  <!--  포트폴리오-->
+<!-- shopping mall ,고라쿠 리스트, 스터디야, 모멘텀, 네온사인
+
+-->
+  <div class="section" id="section2">
+    <div class="intro">
+      <h1>Just use </h1>
+      <p>autoScrolling:false</p>
+    </div>
+  </div>
+
+  <div class="section" id="section3">
+    <div class="intro">
+      <h1>Contact me </h1>
+      <p></p>
+    </div>
+  </div>
+</div>
+<script src="/node_modules/particles.js/particles.js"></script>
+<script th:inline="javascript">
+    particlesJS.load('particles-js', '/particles.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+</script>
+<script type="text/javascript" src="/node_modules/fullpage.js/dist/fullpage.js"></script>
+<script th:inline="javascript">
+    new fullpage('#fullpage', {
+        menu: '#menu',
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#222222', '#222222', '#DDDDDD'],
+        autoScrolling: false,
+        licenseKey: '75CCC562-E65645AD-AD246452-83704190'
+    });
+</script>
+<script type="text/javascript" src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
