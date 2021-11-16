@@ -66,21 +66,11 @@
           color: #555555;
       }
 
-      #first {
-          position: relative;
-          left: 20%;
-          display: inline-block;
-          z-index: 100;
-      }
-
-      #first * {
-          display: block;
-      }
-
       #section1 img {
           border-radius: 20px;
           border: 2px solid #DDD;
       }
+
       .section1Container {
           z-index: 100;
           position: relative;
@@ -105,20 +95,31 @@
           height: 33.33%;
       }
 
-      #skills{
+      #skills {
           padding: 0;
           list-style: none;
           float: left;
       }
 
-      #skills li{
-          float:left;
+      #skills li {
+          float: left;
           background: #DDD;
-          color:#222;
-          padding:4px 20px;
+          color: #222;
+          padding: 4px 20px;
           border-radius: 20px;
           margin-right: 5px;
           margin-bottom: 5px;
+      }
+
+      .sectionContainer {
+          z-index: 100;
+          position: relative;
+          max-width: 1500px;
+          width: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 50px;
+          border-radius: 20px;
       }
   </style>
 </head>
@@ -150,7 +151,7 @@
     <div data-aos="fade-right"
          data-aos-delay="50"
          data-aos-duration="2000"
-         id="first" class="position-relative text-white">
+         id="first" class="text-white sectionContainer">
       <h1 class="display-1">Irostub</h1>
       <h3 class="display-4">Backend Engineer</h3>
       <p class="text-muted">Keep it small and simple. Add value to code.</p>
@@ -161,7 +162,6 @@
   <!--자기 소개 프로필-->
   <div class="section text-white" id="section1">
     <div data-aos="fade-up"
-         data-aos-delay="500"
          data-aos-duration="500">
       <div class="section1Container">
         <!--        <h2 class="display-2">Who am I</h2>-->
@@ -170,7 +170,7 @@
           <div id="myDesc">
             <div class="d-flex flex-column">
               <h4 class="display-4">Who am I</h4>
-                <p>능동적으로 일하며 부지런히 공부하는, 한발 더 전진하는 것에 큰 기쁨을 느끼는 개발자</p>
+              <p>능동적으로 일하며 부지런히 공부하는, 한발 더 전진하는 것에 큰 기쁨을 느끼는 개발자</p>
               <ul>
                 <li>의미 코드의 1일 1커밋을 목표</li>
                 <li>같이 일하는 시너지와 즐거움</li>
@@ -183,19 +183,19 @@
             </div>
             <div class="d-flex flex-column">
               <h2>Skills</h2>
-                <ul id="skills">
-                  <li><img src="/images/icon/spring.png" alt=""> Spring</li>
-                  <li>JPA</li>
-                  <li>RDB</li>
-                  <li><img src="/images/icon/docker.png" alt=""> Docker</li>
-                  <li><img src="/images/icon/java.png" alt=""> Java</li>
-                  <li><img src="/images/icon/python.png" alt=""> Python</li>
-                  <li><img src="/images/icon/csharp.png" alt=""> C#</li>
-                  <li>SQL</li>
-                  <li><img src="/images/icon/html.png" alt=""> Html</li>
-                  <li><img src="/images/icon/javascript.png" alt=""> Javascript</li>
-                  <li><img src="/images/icon/css.png" alt=""> Css</li>
-                </ul>
+              <ul id="skills">
+                <li><img src="/images/icon/spring.png" alt=""> Spring</li>
+                <li>JPA</li>
+                <li>RDB</li>
+                <li><img src="/images/icon/docker.png" alt=""> Docker</li>
+                <li><img src="/images/icon/java.png" alt=""> Java</li>
+                <li><img src="/images/icon/python.png" alt=""> Python</li>
+                <li><img src="/images/icon/csharp.png" alt=""> C#</li>
+                <li>SQL</li>
+                <li><img src="/images/icon/html.png" alt=""> Html</li>
+                <li><img src="/images/icon/javascript.png" alt=""> Javascript</li>
+                <li><img src="/images/icon/css.png" alt=""> Css</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -210,9 +210,37 @@
   <!-- shopping mall ,고라쿠 리스트, 스터디야, 모멘텀, 네온사인
   -->
   <div class="section" id="section2">
-    <div class="intro">
-      <h1>project area </h1>
-      <p>PA</p>
+    <div class="sectionContainer">
+      <div class="projectItem"
+           data-aos="fade-down"
+           data-aos-duration="500">
+        <h1>ERP System</h1>
+        <p>PA</p>
+      </div>
+      <div class="projectItem"
+           data-aos="fade-down"
+           data-aos-duration="500">
+        <h1>Studya</h1>
+        <p>PA</p>
+      </div>
+      <div class="projectItem"
+           data-aos="fade-down"
+           data-aos-duration="500">
+        <h1>Goraku List</h1>
+        <p>PA</p>
+      </div>
+      <div class="projectItem"
+           data-aos="fade-down"
+           data-aos-duration="500">
+        <h1>Neon</h1>
+        <p>PA</p>
+      </div>
+      <div class="projectItem"
+           data-aos="fade-down"
+           data-aos-duration="500">
+        <h1>Momentom</h1>
+        <p>PA</p>
+      </div>
     </div>
   </div>
 
