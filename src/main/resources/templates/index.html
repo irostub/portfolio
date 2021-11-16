@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
   <style>
       * {
           font-family: 'Open Sans', sans-serif;
@@ -131,17 +131,21 @@
 <div class="menu-wrapper">
   <ul id="menu">
     <li data-aos="fade-down"
-        data-aos-delay="500"
+        data-aos-delay="300"
         data-aos-duration="500"
         data-menuanchor="firstPage" class="active"><a href="#firstPage">MAIN</a></li>
     <li data-aos="fade-down"
-        data-aos-delay="700"
+        data-aos-delay="500"
         data-aos-duration="500"
         data-menuanchor="secondPage"><a href="#secondPage">PROFILE</a></li>
     <li data-aos="fade-down"
-        data-aos-delay="900"
+        data-aos-delay="700"
         data-aos-duration="500"
         data-menuanchor="3rdPage"><a href="#3rdPage">PROJECT</a></li>
+    <li data-aos="fade-down"
+        data-aos-delay="900"
+        data-aos-duration="500"
+        data-menuanchor="4rdPage"><a href="#4rdPage">CONTECT</a></li>
   </ul>
 </div>
 <a href="https://github.com/irostub">
@@ -358,7 +362,7 @@
   </div>
 
   <div class="section" id="section3">
-    <div class="intro">
+    <div class="sectionContainer">
       <h1>Contact me area </h1>
       <p>CM</p>
     </div>
@@ -374,7 +378,7 @@
 <script th:inline="javascript">
     new fullpage('#fullpage', {
         menu: '#menu',
-        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
         sectionsColor: ['#222222', '#222222', '#DDDDDD', '#DDDDDD'],
         autoScrolling: false,
         licenseKey: '75CCC562-E65645AD-AD246452-83704190'
