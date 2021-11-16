@@ -365,32 +365,33 @@
 
   <div class="section" id="section3">
     <div class="sectionContainer">
-      <h1 class="display-4 mb-5">Drop me a line</h1>
-      <!--is-invalid 검증 오류 시-->
+      <h4 id="sendLine" class="display-4" style="display: none;">Thank you for sending. I'll reply.</h4>
       <form th:action="@{/line}" method="post">
+      <!--is-invalid 검증 오류 시-->
+        <h1 id="lineTitle" class="display-4 mb-5">Drop me a line</h1>
         <div class="form-group">
           <label for="fullname">Full Name</label>
-          <input type="text" class="form-control" id="fullname" placeholder="What's your name?" required>
+          <input name="name" type="text" class="form-control" id="fullname" placeholder="What's your name?" required>
           <div class="invalid-feedback">
             Please provide a valid city.
           </div>
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="you@email.com" required>
+          <input name="email" type="email" class="form-control" id="email" placeholder="you@email.com" required>
           <div class="invalid-feedback">
             Please, Check your email.
           </div>
         </div>
         <div class="form-group">
           <label for="lineMessage">Email address</label>
-          <textarea rows="8" class="form-control" id="lineMessage" placeholder="Write your message for me"
+          <textarea name="desc" rows="8" class="form-control" id="lineMessage" placeholder="Write your message for me"
                     required></textarea>
           <div class="invalid-feedback">
             Message can't blank.
           </div>
         </div>
-        <button class="btn w-100 btn-warning">Submit</button>
+        <button id="btn_submit" type="submit" class="btn w-100 btn-warning">Submit</button>
       </form>
     </div>
   </div>
@@ -413,11 +414,23 @@
         licenseKey: '75CCC562-E65645AD-AD246452-83704190'
     });
 </script>
-<script type="text/javascript" src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script th:inline="javascript">
+    $('#btn_submit').click(function (e) {
+        e.preventDefault();
+        const form = $('form');
+        form.submit();
+        form.fadeOut(500).promise().done(function () {
+            $('#sendLine').fadeIn(500);
+        });
+
+        return false;
+    });
 </script>
 </body>
 </html>
