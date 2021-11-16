@@ -36,6 +36,9 @@ test {
 	useJUnitPlatform()
 }
 
+bootJar {
+	mainClass = 'com.irostub.portfolio.PortfolioApplication'
+}
 
 node {
 	version = '16.3.0'
